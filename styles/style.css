@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    color: red;
+    font-size: 38px;
+    text-decoration: underline;
+}
+
+ /* შესრულდება მაშინ როცა ეკრანის ზომა მინიმუმ 1200 პიქსელი */
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+
+ /* შესრულდება მაშინ როცა ეკრანის ზომა იქნება მაქსიმუმ 1000 პიქსელი */
+@media only screen and (max-width: 1000px) {
+    h1 {
+        color: green;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        color: blue;
+    }
+}
